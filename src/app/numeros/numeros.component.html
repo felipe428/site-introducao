@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <h1>Numeros aleatórios</h1>
+
+  <h2>Quantas linhas deseja?</h2>
+  <input class="form-control" type="text" [(ngModel)]="n"/>
+  <br>
+
+  <table>
+    <tr *ngFor="let item of gerador(); index as i">
+      <td>Linha {{i+1}}</td>
+      <td>-->{{item}}</td>
+    </tr>
+  </table>
+</div>
